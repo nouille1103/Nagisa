@@ -62,23 +62,24 @@ export const botConfig = {
       { question: "What is your name?", required: true },
       { question: "How old are you?", required: true },
       { question: "Why do you want to join?", required: true },
+      { question: "depuis combien de temps êtes vous sur le serveur ?", required: true },
     ],
 
     // Embed colors by application status.
     statusColors: {
       pending: "#FFA500",
-      approved: "#00FF00",
-      denied: "#FF0000",
+      approved: "#8ACE00",
+      denied: "#FF006E",
     },
 
     // How long users must wait before submitting another application (hours).
     applicationCooldown: 24,
 
     // Auto-delete denied applications after this many days.
-    deleteDeniedAfter: 7,
+    deleteDeniedAfter: 2,
 
     // Auto-delete approved applications after this many days.
-    deleteApprovedAfter: 30,
+    deleteApprovedAfter: 2,
 
     // Role IDs allowed to manage applications.
     managerRoles: [], // Will be populated from environment or database
@@ -92,7 +93,7 @@ export const botConfig = {
     colors: {
       // Main brand colors.
       primary: "#F2C464",
-      secondary: "#2F3136",
+      secondary: "#7CDEC6",
 
       // Standard status colors for success/error/warning/info messages.
       success: "#57F287",
@@ -126,7 +127,7 @@ export const botConfig = {
       },
       economy: "#F1C40F",
       birthday: "#E91E63",
-      moderation: "#9B59B6",
+      moderation: "#7DCC75",
 
       // Ticket priority color mapping.
       priority: {
